@@ -2,7 +2,7 @@
 
 RomanConvert - convert between roman and arabic numbers
 
-# SYNOPSIS
+# USAGE
 
     use RomanConvert;
 
@@ -37,22 +37,22 @@ Therefore when we are tying to parse a roman numeral into arabic,
 we can do the reverse lookup with the result to verify that the
 roman numeral passed in was of the correct form.
 
-## METHODS
+# METHODS
 
-- roman2arabic
+### roman2arabic
 
-    Accepts a string representing a roman numeral in uppercase, standard
-    notation.
+Accepts a string representing a roman numeral in uppercase, standard
+notation.
 
-    Returns -1 for an error, or a positive value between 1 and 3999
-    (inclusive) with a successful conversion.
+Returns -1 for an error, or a positive value between 1 and 3999
+(inclusive) with a successful conversion.
 
-- arabic2roman
+### arabic2roman
 
-    Accepts an integer between 1 and 3999 inclusive.
+Accepts an integer between 1 and 3999 inclusive.
 
-    Returns -1 for an error, or a string containing the standard roman
-    numeral representation on a successful conversion.
+Returns -1 for an error, or a string containing the standard roman
+numeral representation on a successful conversion.
 
 # EXPORT
 
@@ -62,11 +62,13 @@ roman2arabic() and arabic2roman() are both exported by default.
 
 This module includes a unit\_tests() function. Simply run it and ensure
 all tests pass, with no FAILED tests:
+
     use RomanConvert;
 
     RomanConvert::unit_tests();
 
 example (truncated) output:
+
     roman2arabic(arabic2roman(1..3999))...passed
     sub arabic2roman...
     1 = I.................................passed
@@ -77,7 +79,7 @@ example (truncated) output:
 
 # SEE ALSO
 
-github.com/pabo/RomanConvert
+[https://github.com/pabo/RomanConvert](https://github.com/pabo/RomanConvert)
 
 # AUTHOR
 
