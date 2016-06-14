@@ -15,7 +15,7 @@ This module will convert roman numerals to arabic, and vice versa.
 It only supports the "standard" form as defined here:
 [https://en.wikipedia.org/wiki/Roman\_numerals](https://en.wikipedia.org/wiki/Roman_numerals)
 
-This is to say that it supports arabic numbers 0-3999 and roman
+This is to say that it supports arabic numbers 1-3999 and roman
 numerals with symbols of decreasing value, with the exception of
 certain subtraction-based symbols: CM, CD, XC, XL, IX, and IV.
 Alternate forms containing non-standard subtraction-based symbols
